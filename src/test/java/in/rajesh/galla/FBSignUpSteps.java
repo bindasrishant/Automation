@@ -4,36 +4,36 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 
 public class FBSignUpSteps extends PageInjector {
 
     public FBSignUpSteps(DriverInitializer driverInitializer) {
 
-        this.signUpActions = driverInitializer.signUpActions;
+        this.fbSignUpActions = driverInitializer.fbSignUpActions;
     }
 
     @Given("^I am on sign up page$")
     public void I_am_on_sign_up_page() throws Throwable {
 
-        signUpActions.goToSignUpPage();
+        fbSignUpActions.goToSignUpPage();
     }
 
     @When("^I sign up$")
     public void I_sign_up() throws Throwable {
 
-        signUpActions.submitData();
+        fbSignUpActions.submitData();
+        Assert.assertTrue(fbSignUpActions.isResendEmailButtonShown());
     }
 
     @And("^I get the confirmation email$")
     public void I_get_the_confirmation_email() throws Throwable {
 
-//      TODO
+        Assert.assertTrue(fbSignUpActions.isEmailSent());
     }
 
-    @Then("^I get confirm$")
-    public void I_get_confirm() throws Throwable {
+    @Then("^I confirm the details$")
+    public void I_confirm_the_details() throws Throwable {
 
-//      TODO
     }
-
 }

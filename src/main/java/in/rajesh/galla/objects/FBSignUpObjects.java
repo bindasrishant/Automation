@@ -42,6 +42,8 @@ public class FBSignUpObjects extends FluentPage {
     @FindBy(css = "#u_0_i")
     protected FluentWebElement signUp;
 
-    @FindBy(css = "#req")
-    protected FluentWebElement form;
+    @FindBy(css = "#resend_confirm_email")
+    protected FluentWebElement resendEmail;
+
+    String signUpEmailSubject = "Action Required: Confirm Your Facebook Account";
 }

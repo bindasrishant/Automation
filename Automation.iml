@@ -21,5 +21,6 @@
     <orderEntry type="library" name="fest-assert-1.4" level="project" />
     <orderEntry type="library" name="fluentlenium-core-0.10.3" level="project" />
     <orderEntry type="library" name="selenium-server-standalone-2.44.0" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
   </component>
 </module>

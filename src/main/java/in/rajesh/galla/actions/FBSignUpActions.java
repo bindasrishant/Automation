@@ -1,10 +1,12 @@
 package in.rajesh.galla.actions;
 
+import in.rajesh.galla.ResourceLoader;
 import in.rajesh.galla.objects.FBSignUpObjects;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Properties;
 
 /**
  * Created by Galla on 2/21/2015.
@@ -12,8 +14,8 @@ import java.util.Date;
 public class FBSignUpActions extends FBSignUpObjects {
 
     public void goToSignUpPage() {
-        goTo("https://www.facebook.com");
 
+        goTo("https://www.facebook.com");
     }
 
     public void submitData() throws InterruptedException {
@@ -36,5 +38,17 @@ public class FBSignUpActions extends FBSignUpObjects {
         signUp.click();
 
         Thread.sleep(5000);
+    }
+
+    public boolean isResendEmailButtonShown() {
+
+        return resendEmail.isDisplayed();
+    }
+
+    public boolean isEmailSent() throws Exception {
+
+        Properties properties = ResourceLoader.loadGradleResource("property/fb.properties");
+
+        return false;
     }
 }
