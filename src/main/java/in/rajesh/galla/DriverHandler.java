@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Created by Galla on 2/23/2015.
  */
-public class DriverInitializer extends PageInjector{
+public class DriverHandler extends PageInjector{
 
     @Before
     public void before() {
