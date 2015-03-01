@@ -30,7 +30,7 @@ public class FBSignUpObjects extends FluentPage {
     @FindBy(css = "#day option[value='10']")
     protected FluentWebElement day;
 
-    @FindBy(css = "#year>option[value='2010']")
+    @FindBy(css = "#year>option[value='1990']")
     protected FluentWebElement year;
 
     @FindBy(css = "#u_0_d")

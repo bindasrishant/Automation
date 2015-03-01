@@ -12,28 +12,28 @@ import java.util.Properties;
  */
 public class RetrieveEmail {
 
-    public static void main(String srgs[]) throws Exception {
-        RetrieveEmail retrieveEmail = new RetrieveEmail();
-        Message message = retrieveEmail.getMessage("imap.gmail.com",
-                "ilovecoingattokyo@gmail.com","codingattokyo","ilovecodingattokyo@gmail.com","ilovecodingattokyo@gmail.com","Hi ra");
-        String emailContent = retrieveEmail.getEmailContent(message);
-        System.out.println(emailContent);
+    public String getEmail(final String host, final String username, final String password,
+                           final String recipientAddressString) throws Exception {
+
+        Message message = getMessage(host,username, password, recipientAddressString);
+        String emailContent = getEmailContent(message);
+        return emailContent;
     }
 
-    private Message getMessage(final String host, final String username, final String password,
-                               final String recipientAddressString, final String fromAddress, final String subject) throws Exception {
+    private Message getMessage(final String host, final String username, final String password, final String recipientAddressString) throws Exception {
         boolean isMailFound = false;
         Message messageSearched = null;
         Folder inbox = getFolder(getStore(host, username, password), "INBOX");
         if(inbox == null) throw new NullPointerException("No messages found");
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DATE, -1);
-        SearchTerm[] searchTerms = {new SentDateTerm(ComparisonTerm.GE, calendar.getTime()),
-                new FromStringTerm(fromAddress), new SubjectTerm(subject),
-                new RecipientStringTerm(Message.RecipientType.TO, recipientAddressString)};
+        System.out.println();
+        System.out.println("Search terms recipientAddressString:" + recipientAddressString + " calendar.getTime():" + calendar.getTime());
+        System.out.println();
+        SearchTerm[] searchTerms = {new SentDateTerm(ComparisonTerm.GE, calendar.getTime()), new RecipientStringTerm(Message.RecipientType.TO, recipientAddressString)};
         Message[] messages = getMessages(inbox, searchTerms);
         if(messages == null) throw new NullPointerException("No messages found");
-        if(!messages[0].isSet(javax.mail.Flags.Flag.SEEN) && messages[0].getSubject().equalsIgnoreCase(subject)) {
+        if(!messages[0].isSet(Flags.Flag.SEEN)) {
             messageSearched = messages[0];
             isMailFound = true;
         }
@@ -48,12 +48,7 @@ public class RetrieveEmail {
     protected Message[] getMessages(Folder folder, SearchTerm[] searchTerms) throws Exception {
         Message[] messages;
         folder.open(Folder.READ_WRITE);
-        long startTime = System.nanoTime();
-        do{
-            Thread.sleep(50000);
-            messages = folder.getMessages();
-            if(System.nanoTime() - startTime/(1000000000 * 60) >= 5 ) break;
-        }while(messages.length == 0);
+        messages = folder.getMessages();
         if(messages == null) throw new NullPointerException("No messages found");
         return folder.search(new AndTerm(searchTerms), messages);
     }
@@ -82,6 +77,4 @@ public class RetrieveEmail {
         }
         return buffer.toString();
     }
-
-
 }
