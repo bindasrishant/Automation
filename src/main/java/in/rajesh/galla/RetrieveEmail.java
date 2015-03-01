@@ -1,10 +1,9 @@
 package in.rajesh.galla;
 
 import javax.mail.*;
-import javax.mail.search.*;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Calendar;
+import javax.mail.search.AndTerm;
+import javax.mail.search.RecipientStringTerm;
+import javax.mail.search.SearchTerm;
 import java.util.Properties;
 
 /**
@@ -20,25 +19,24 @@ public class RetrieveEmail {
         return emailContent;
     }
 
-    private Message getMessage(final String host, final String username, final String password, final String recipientAddressString) throws Exception {
-        boolean isMailFound = false;
-        Message messageSearched = null;
+    public String getEmail(Message message) throws Exception {
+
+        String emailContent = getEmailContent(message);
+        return emailContent;
+    }
+
+    public Message getMessage(final String host, final String username, final String password, final String recipientAddressString) throws Exception {
+
         Folder inbox = getFolder(getStore(host, username, password), "INBOX");
         if(inbox == null) throw new NullPointerException("No messages found");
-        Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DATE, -1);
         System.out.println();
-        System.out.println("Search terms recipientAddressString:" + recipientAddressString + " calendar.getTime():" + calendar.getTime());
+        System.out.println("Search terms recipientAddressString:" + recipientAddressString);
         System.out.println();
-        SearchTerm[] searchTerms = {new SentDateTerm(ComparisonTerm.GE, calendar.getTime()), new RecipientStringTerm(Message.RecipientType.TO, recipientAddressString)};
+        SearchTerm[] searchTerms = { new RecipientStringTerm(Message.RecipientType.TO, recipientAddressString)};
         Message[] messages = getMessages(inbox, searchTerms);
         if(messages == null) throw new NullPointerException("No messages found");
-        if(!messages[0].isSet(Flags.Flag.SEEN)) {
-            messageSearched = messages[0];
-            isMailFound = true;
-        }
-        if(!isMailFound) throw new Exception("Email could not be found");
-        return messageSearched;
+
+        return messages[0];
     }
 
     protected Folder getFolder(Store store, String folderName) throws Exception {
@@ -69,12 +67,7 @@ public class RetrieveEmail {
     }
 
     protected String getEmailContent(Message message) throws Exception {
-        String line;
-        StringBuffer buffer = new StringBuffer();
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(message.getInputStream()));
-        while ((line = bufferedReader.readLine()) != null) {
-            buffer.append(line);
-        }
-        return buffer.toString();
+
+        return message.getContent().toString();
     }
 }

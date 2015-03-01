@@ -6,9 +6,12 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 
+import javax.mail.Message;
+
 public class FBSignUpSteps extends PageInjector {
 
     static String confirmationLink;
+    static Message message;
 
     public FBSignUpSteps(DriverHandler driverHandler) {
 
@@ -25,25 +28,31 @@ public class FBSignUpSteps extends PageInjector {
     public void I_sign_up() throws Throwable {
 
         fbSignUpActions.submitData("ilovecodingattokyo");
-        Assert.assertTrue(fbSignUpActions.isResendEmailButtonShown());
+        Assert.assertTrue("Next page not loaded", fbSignUpActions.isResendEmailButtonShown());
     }
 
     @And("^I get the confirmation email$")
     public void I_get_the_confirmation_email() throws Throwable {
 
         RetrieveEmail retrieveEmail = new RetrieveEmail();
-        String email =  retrieveEmail.getEmail("imap.gmail.com",
+        message =  retrieveEmail.getMessage("imap.gmail.com",
                 "ilovecodingattokyo@gmail.com","codingattokyo",
                 System.getProperty("emailID"));
-        System.out.println("Email retrieved is " + email);
-        confirmationLink = fbSignUpActions.getConfirmationLink(email);
+        System.out.println("Message retrieved is " + message);
+        confirmationLink = fbSignUpActions.getConfirmationLink(message);
         System.out.println("Confirmation link is " + confirmationLink);
-        Assert.assertTrue(confirmationLink != null);
+        Assert.assertTrue("Confirmation link is null",confirmationLink != null);
     }
 
-    @Then("^I confirm the details$")
-    public void I_confirm_the_details() throws Throwable {
+    @Then("^I complete the registration$")
+    public void I_complete_the_registration() throws Throwable {
 
         fbSignUpActions.goTo(confirmationLink);
+    }
+
+    @And("^I see an error$")
+    public void I_see_an_error() throws Throwable {
+
+        Assert.assertTrue("Error is not displayed",fbSignUpActions.isErrorDisplayed());
     }
 }

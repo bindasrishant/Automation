@@ -1,1 +1,1 @@
-In future, this will contain the browser name taken from cmd
+firefox

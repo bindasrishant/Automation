@@ -1,0 +1,79 @@
+
+
+
+Automation Starts here
+
+
+
+:clean
+:compileJava
+:processResources UP-TO-DATE
+:classes
+:jar
+:assemble
+:compileTestJava
+:processTestResources
+:cucumber
+@signup
+Feature: User Sign up
+Terminate batch job (Y/N)? 
+
+C:\Users\Galla\Desktop\workspace\Automation>
+
+C:\Users\Galla\Desktop\workspace\Automation>
+
+C:\Users\Galla\Desktop\workspace\Automation>
+
+
+Automation Starts here
+
+
+
+:clean
+:compileJava
+:processResources UP-TO-DATE
+:classes
+:jar
+:assemble
+:compileTestJava
+:processTestResources
+:cucumber
+@signup
+Feature: User Sign up
+
+Search terms recipientAddressString:ilovecodingattokyo+0301155518@gmail.com
+
+Message retrieved is com.sun.mail.imap.IMAPMessage@6063f37
+Message is com.sun.mail.imap.IMAPMessage@6063f37
+Email is --b1_1cda675bc69694d84311993d6268ba20Content-Type: text/plain; charset="UTF-8"Content-Transfer-Encoding: quoted-printable=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D==3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3DConfirm Your Accounthttps://www.facebook.com/n/?c.php&code=3D42840&email=3Dilovecodingattokyo%=2B0301155518%40gmail.com&sig=3DAeZdISK8FVb8WUzE&medium=3Demail&mid=3DHMTkw=NjI1MDM4Omlsb3ZlY29kaW5nYXR0b2t5byswMzAxMTU1NTE4QGdtYWlsLmNvbToyNjY&n_m=3D=ilovecodingattokyo%2B0301155518%40gmail.com=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D==3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3DHey Love,You recently registered for Facebook. To complete your Facebook =registration, please confirm your account.You may be asked to enter this confirmation code:42840Facebook helps you communicate and stay in touch with all of your friends. =Once you join Facebook, you'll be able to share photos, plan events, and =more.=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D==3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3DDidn't sign up for Facebook? Please let us know:https://www.facebook.com/confirmemail.php?e=3Dilovecodingattokyo%2B0301155=518%40gmail.com&c=3D42840&report=3D1Facebook, Inc., Attention: Department 415, PO Box 10005, Palo Alto, CA =94303--b1_1cda675bc69694d84311993d6268ba20Content-Type: text/html; charset="UTF-8"Content-Transfer-Encoding: quoted-printable<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional =//EN"><html><head><title>Facebook</title><meta http-equiv=3D"Content-Type" =content=3D"text/html; charset=3Dutf-8" /><style>@media all and (max-width: =480px){*[class].ib_t{min-width:100% =!important}*[class].ib_row{display:block =!important}*[class].ib_ext{display:block !important;padding:10px 0 5px =0;vertical-align:top !important;width:100% =!important}*[class].ib_img,*[class].ib_mid{vertical-align:top =!important}*[class].mb_blk{display:block =!important;padding-bottom:10px;width:100% =!important}*[class].mb_hide{display:none =!important}*[class].mb_inl{display:inline !important}}</style></head><body =style=3D"margin:0;padding:0;" dir=3D"ltr" bgcolor=3D"#ffffff"><table =cellspacing=3D"0" cellpadding=3D"0" width=3D"100%;" id=3D"email_table" =border=3D"0" style=3D"border-collapse:collapse;"><tr><td =id=3D"email_content" style=3D"font-family:Helvetica Neue,Helvetica,Lucida =Grande,tahoma,verdana,arial,sans-serif;background:#ffffff;"><table =cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" =style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"20" =style=3D"line-height:20px;" colspan=3D"3">&nbsp;</td></tr><tr><td =height=3D"1" colspan=3D"3" style=3D"line-height:1px;"><span =style=3D"color:#FFFFFF;display:none !important;font-size:1px;">=C2=A0 Hey =Love, =C2=A0 You recently registered for Facebook. To complete your =Facebook registration, please confirm your account. ==C2=A0</span></td></tr><tr><td width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =style=3D""><table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" =style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"16" =style=3D"line-height:16px;" colspan=3D"3">&nbsp;</td></tr><tr><td =width=3D"32" align=3D"left" valign=3D"middle" =style=3D"height:32;line-height:0px;"><a href=3D"https://www.facebook.com/n=/?c.php&amp;code=3D42840&amp;email=3Dilovecodingattokyo%2B0301155518%40gma=il.com&amp;sig=3DAeZdISK8FVb8WUzE&amp;medium=3Demail&amp;mid=3DHMTkwNjI1MD=M4Omlsb3ZlY29kaW5nYXR0b2t5byswMzAxMTU1NTE4QGdtYWlsLmNvbToyNjY&amp;n_m=3Dil=ovecodingattokyo%2B0301155518%40gmail.com" =style=3D"color:#3b5998;text-decoration:none;"><img =src=3D"https://fbstatic-a.akamaihd.net/rsrc.php/v2/yk/r/_2faPUZhPI6.png" =width=3D"32" height=3D"32" style=3D"border:0;" /></a></td><td width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =width=3D"100%" style=3D""><a href=3D"https://www.facebook.com/n/?c.php&amp=;code=3D42840&amp;email=3Dilovecodingattokyo%2B0301155518%40gmail.com&amp;=sig=3DAeZdISK8FVb8WUzE&amp;medium=3Demail&amp;mid=3DHMTkwNjI1MDM4Omlsb3ZlY=29kaW5nYXR0b2t5byswMzAxMTU1NTE4QGdtYWlsLmNvbToyNjY&amp;n_m=3Dilovecodingat=tokyo%2B0301155518%40gmail.com" =style=3D"color:#3b5998;text-decoration:none;font-family:Helvetica =Neue,Helvetica,Lucida Grande,tahoma,verdana,arial,sans-serif;font-size:19p=x;line-height:32px;">Facebook</a></td></tr><tr =style=3D"border-bottom:solid 1px #e5e5e5;"><td height=3D"16" =style=3D"line-height:16px;" colspan=3D"3">&nbsp;</td></tr></table></td><td =width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =style=3D""><table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" =style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"28" =style=3D"line-height:28px;">&nbsp;</td></tr><tr><td style=3D""><span =style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=,arial,sans-serif;font-size:16px;line-height:21px;color:#141823;">Hey =Love,</span></td></tr><tr style=3D""><td height=3D"14" =style=3D"line-height:14px;">&nbsp;</td></tr><tr><td style=3D""><span =style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=,arial,sans-serif;font-size:16px;line-height:21px;color:#141823;">You =recently registered for Facebook. To complete your Facebook registration, =please confirm your account.</span></td></tr><tr style=3D""><td =height=3D"14" style=3D"line-height:14px;">&nbsp;</td></tr></table></td><td =width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =style=3D""><table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" =style=3D"border-collapse:collapse;"><tr style=3D""><td height=3D"2" =style=3D"line-height:2px;" colspan=3D"3">&nbsp;</td></tr><tr><td =class=3D"mb_blk" style=3D""><a href=3D"https://www.facebook.com/n/?c.php&a=mp;code=3D42840&amp;email=3Dilovecodingattokyo%2B0301155518%40gmail.com&am=p;sig=3DAeZdISK8FVb8WUzE&amp;medium=3Demail&amp;mid=3DHMTkwNjI1MDM4Omlsb3Z=lY29kaW5nYXR0b2t5byswMzAxMTU1NTE4QGdtYWlsLmNvbToyNjY&amp;n_m=3Dilovecoding=attokyo%2B0301155518%40gmail.com" =style=3D"color:#3b5998;text-decoration:none;"><table cellspacing=3D"0" =cellpadding=3D"0" width=3D"100%" =style=3D"border-collapse:collapse;"><tr><td style=3D"border-collapse:colla=pse;border-radius:2px;text-align:center;display:block;border:solid 1px =#344c80;box-shadow:inset 0 1px 1px rgba(255, 255, 255, 0.1),0 1px 0 =rgba(0, 0, 0, 0.1);background:#4c649b;padding:7px 16px 8px 16px;"><a =href=3D"https://www.facebook.com/n/?c.php&amp;code=3D42840&amp;email=3Dilo=vecodingattokyo%2B0301155518%40gmail.com&amp;sig=3DAeZdISK8FVb8WUzE&amp;me=dium=3Demail&amp;mid=3DHMTkwNjI1MDM4Omlsb3ZlY29kaW5nYXR0b2t5byswMzAxMTU1NT=E4QGdtYWlsLmNvbToyNjY&amp;n_m=3Dilovecodingattokyo%2B0301155518%40gmail.co=m" =style=3D"color:#3b5998;text-decoration:none;display:block;"><center><font =size=3D"3"><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =Grande,tahoma,verdana,arial,sans-serif;white-space:nowrap;font-weight:bold=;vertical-align:middle;color:#ffffff;text-shadow:0 -1px 0 =#415686;font-size:14px;line-height:14px;">Confirm&nbsp;Your&nbsp;Account</=span></font></center></a></td></tr></table></a></td><td width=3D"100%" =class=3D"mb_hide" style=3D""></td></tr><tr style=3D""><td height=3D"32" =style=3D"line-height:32px;" colspan=3D"3">&nbsp;</td></tr></table></td><td =width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =style=3D""><table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" =style=3D"border-collapse:collapse;"><tr><td style=3D""><span =style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=,arial,sans-serif;font-size:16px;line-height:21px;color:#141823;">You may =be asked to enter this confirmation code:</span></td></tr><tr =style=3D""><td height=3D"14" =style=3D"line-height:14px;">&nbsp;</td></tr><tr><td style=3D""><span =style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=,arial,sans-serif;font-size:16px;line-height:21px;color:#141823;"><center>=<table cellspacing=3D"0" cellpadding=3D"0" =style=3D"border-collapse:collapse;"><tr><td style=3D"font-size:11px;font-f=amily:LucidaGrande,tahoma,verdana,arial,sans-serif;padding:10px;background=-color:#f2f2f2;border-left:1px solid #ccc;border-right:1px solid =#ccc;border-top:1px solid #ccc;border-bottom:1px solid =#ccc;">42840</td></tr></table></center></span></td></tr><tr style=3D""><td =height=3D"14" style=3D"line-height:14px;">&nbsp;</td></tr><tr><td =style=3D""><span style=3D"font-family:Helvetica Neue,Helvetica,Lucida =Grande,tahoma,verdana,arial,sans-serif;font-size:14px;line-height:19px;col=or:#898f9c;">Facebook helps you communicate and stay in touch with all of =your friends. Once you join Facebook, you&#039;ll be able to share photos, =plan events, and more.</span></td></tr><tr style=3D""><td height=3D"14" =style=3D"line-height:14px;">&nbsp;</td></tr></table></td><td width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr><td =width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td><td =style=3D""><table cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" =style=3D"border-collapse:collapse;"><tr style=3D"border-top:solid 1px =#e5e5e5;"><td height=3D"16" =style=3D"line-height:16px;">&nbsp;</td></tr><tr><td =style=3D"font-family:Helvetica Neue,Helvetica,Lucida Grande,tahoma,verdana=,arial,sans-serif;font-size:11px;color:#aaaaaa;line-height:16px;">Didn&#03=9;t sign up for Facebook? Please let us know: <a href=3D"https://www.faceb=ook.com/confirmemail.php?e=3Dilovecodingattokyo%2B0301155518%40gmail.com&a=mp;c=3D42840&amp;report=3D1" style=3D"color:#3b5998;text-decoration:none;"=>https://www.facebook.com/confirmemail.php?e=3Dilovecodingattokyo%2B030115=5518%40gmail.com&amp;c=3D42840&amp;report=3D1</a></td></tr></table></td><t=d width=3D"15" =style=3D"display:block;width:15px;">&nbsp;&nbsp;&nbsp;</td></tr><tr =style=3D""><td height=3D"20" style=3D"line-height:20px;" =colspan=3D"3">&nbsp;</td></tr></table><span style=3D""><img =src=3D"https://www.facebook.com/email_open_log_pic.php?mid=3DHMTkwNjI1MDM4=Omlsb3ZlY29kaW5nYXR0b2t5byswMzAxMTU1NTE4QGdtYWlsLmNvbToyNjY" =style=3D"border:0;width:1px;height:1px;" =/></span></td></tr></table></body></html>--b1_1cda675bc69694d84311993d6268ba20--
+
+  @fb
+  Scenario: I want to sign up for FB [90m# feature/SignUp.feature:5[0m
+    [32mGiven [0m[32mI am on sign up page[0m       [90m# FBSignUpSteps.I_am_on_sign_up_page()[0m
+    [32mWhen [0m[32mI sign up[0m                   [90m# FBSignUpSteps.I_sign_up()[0m
+    [31mAnd [0m[31mI get the confirmation email[0m [90m# FBSignUpSteps.I_get_the_confirmation_email()[0m
+      [31mjava.lang.IndexOutOfBoundsException: No group 1
+      	at java.util.regex.Matcher.group(Matcher.java:487)
+      	at in.rajesh.galla.actions.FBSignUpActions.getConfirmationLink(FBSignUpActions.java:73)
+      	at in.rajesh.galla.FBSignUpSteps.I_get_the_confirmation_email(FBSignUpSteps.java:42)
+      	at ?.And I get the confirmation email(feature/SignUp.feature:8)
+      [0m
+    [36mThen [0m[36mI confirm the details[0m       [90m# FBSignUpSteps.I_confirm_the_details()[0m
+
+1 Scenarios ([31m1 failed[0m)
+4 Steps ([31m1 failed[0m, [36m1 skipped[0m, [32m2 passed[0m)
+0m48.807s
+
+java.lang.IndexOutOfBoundsException: No group 1
+	at java.util.regex.Matcher.group(Matcher.java:487)
+	at in.rajesh.galla.actions.FBSignUpActions.getConfirmationLink(FBSignUpActions.java:73)
+	at in.rajesh.galla.FBSignUpSteps.I_get_the_confirmation_email(FBSignUpSteps.java:42)
+	at ?.And I get the confirmation email(feature/SignUp.feature:8)
+
+:cucumber FAILED
+
+BUILD FAILED
+
+Total time: 1 mins 14.204 secs
+
+C:\Users\Galla\Desktop\workspace\Automation>
